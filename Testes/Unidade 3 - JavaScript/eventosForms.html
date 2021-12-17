@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- https://www.postman-echo.com -->
+        <script>
+            window.onload = () => {
+
+                /*
+                btn_submit.disabled = true;
+                
+                let validaForm = () => {
+
+                    if(nome.value.length == 0 || senha.value.length == 0) {
+
+                        btn_submit.disabled = true;
+                    } else {
+                        
+                        btn_submit.disabled = false;
+                    }
+                }
+
+                nome.oninput = validaForm;
+                senha.oninput = validaForm;
+                */
+
+                login.onsubmit = (evento) => {
+
+                    console.log({nome: nome.value, senha: senha.value});
+                    
+                    /*
+                    if(nome.value.length == 0 || senha.value.length == 0) {
+                    
+                        alert("Campos não podem ficar EM BRANCO!");
+                        return false;
+                    } else {
+
+                        return true;
+                    }
+                    */
+                   
+                   console.log(evento.type);
+                   console.log(evento.target);
+                   console.log(evento.target.id);
+                   //evento.preventDefault();
+                }
+            }
+        </script>
+
+        <title>Login</title>
+    </head>
+
+    <body>
+        <form id="login" action="https://www.postman-echo.com/post" method="POST">
+            <p>
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" autocomplete="off">
+                <span id="instrucoes"></span>
+            </p>
+            <p>
+                <label for="senha">Senha: </label>
+                <input type="password" id="senha" name="senha">
+            </p>
+            <p>
+                <input type="checkbox" id="conectado" name="nconectado">
+                <label for="conectado">Permancer conectado?</label>
+            </p>
+            <p>
+                <button type="submit" id="btn_submit">Confirmar</button>
+            </p>
+        </form>
+    </body>
+
+</html>

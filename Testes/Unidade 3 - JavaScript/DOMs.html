@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+            window.onload = () => {
+
+                let intro = document.getElementById("introducao");
+                intro.innerText = "Nova <strong>Introdução</strong>.";;                 //Trocar o texto
+                intro.innerHTML = "Nova <strong>Introdução</strong>.";;                 //Trocar o texto e formatar com HTML
+                document.getElementById("introducao").innerText = "Nova introdução 2.";
+
+                intro.style.fontWeight = "bold";                                        //Formatar os elementos atraves dos metodos CSS
+                intro.style.textAlign = "center";
+                intro.style.border = "thin solid black";
+                intro.style.padding = "10px 5px";
+                intro.style.background = "#DDF";
+
+                bt.onclick = () => {                                                    //Ao clicar no botao adiciona um item novo a lista
+
+                    let lista = document.getElementById("lista");
+                    lista.innerHTML += "<li>Item</li>"
+                }
+
+                let li = document.getElementById("l1");
+                li.style.color = "red";
+                
+                li = document.getElementsByTagName("li");                               //E' retornado um vetor com os elementos
+                
+                for(let i = 0; i < li.length; i++) {
+                    
+                    li[i].style.color = "red";
+                }
+
+                l1.style.color = "blue";                                                //Pode usar com o id da variavel de uma vez
+
+                li = document.querySelector("#lista > #l3");                            //Util para notacoes CSS
+                li.style.color = "blue";
+                
+                li = document.querySelectorAll("li");                                   //E' retornado um vetor com os elementos
+                console.log(li);
+
+                console.log(lista);
+                console.log(lista.childNodes);                                          //Os espacos sao contados para o vetor
+                console.log(lista.children);
+                console.log(lista.childElementCount);
+                console.log(l1.nextElementSibling);
+                console.log(l1.parentElement);
+            };
+        </script>
+
+        <title>DOMs - Document Object Model</title>
+    </head>
+
+    <body>
+        <p id="introducao">
+            Bem-vindos ao curso de JavaScript.
+        </p>
+
+        <ul id="lista">
+            <li id="l1">1º Item</li>
+            <li id="l2">2º Item</li>
+            <li id="l3">3º Item</li>
+        </ul>
+        <ul id="lista2">
+            <li>4º Item</li>
+        </ul>
+        <button id="bt">+</button>
+    </body>
+</html>

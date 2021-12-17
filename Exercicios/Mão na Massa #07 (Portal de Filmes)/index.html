@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+        <!-- Font Awesome (Ícones) -->
+        <script src="https://kit.fontawesome.com/f28c1c42ed.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <title>Collider - O Seu Portal de Filmes!</title>
+    </head>
+
+    <body>
+        <header class="container">
+            <div class="row">
+                <div class="col-12 header_area">
+                    <div class="row">
+                        <div class="col-1">
+                            <a href="index.html"><img src="img/logo.png" id="logo"></a>
+                        </div>
+
+                        <div class="col-11 col-lg-7 col-xl-8 caixa_nav">
+                            <input type="checkbox" id="menuToggle">
+                            <label for="menuToggle" class="menu-icon">
+                                <i class="fa fa-bars"></i>
+                                <i class="fa fa-times-circle"></i>
+                            </label>
+
+                            <nav class="nav justify-content-end">
+                                <a class="nav-link" href="#lancamentos">Lançamentos</a>
+                                <a class="nav-link" href="#destaques">Em Destaque</a>
+                                <a class="nav-link" href="#notasArea">Avaliações</a>
+                                <a class="nav-link" href="#interviewArea">Entrevistas & Making-of</a>
+                                <a class="nav-link" href="#preRodape">Novidades</a>
+                            </nav>
+                        </div>
+
+                        <div class="col-12 col-lg-4 col-xl-3" id="barraBusca">
+                            <button class="btn btn-dark"><i class="fas fa-search"></i></button><input type="search"
+                                id="pesquisa" placeholder="Pesquisar filme...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+
+            <!-- Corpo do Site -->
+            <div class="row inteiro">
+                <div class="col-12">
+
+                    <!-- Seção de Lançamentos -->
+                    <section id="lancamentos">
+
+                        <!-- Título -->
+                        <div class="row">
+                            <div class="col-12">
+                                <h1 class="tit1">Lançamentos</h1>
+                            </div>
+                        </div>
+
+                        <!-- Trailers -->
+                        <div class="row secaoTrailer">
+                            <div class="col-12">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+
+                                    <div class="carousel-inner">
+
+                                        <!-- Trailers Itens -->
+                                        <div class="carousel-item active">
+                                            <div class="row itemTrailer">
+                                                <div class="col-12 col-lg-6">
+                                                    <iframe width="560" height="315"
+                                                        src="https://www.youtube.com/embed/XpICoc65uh0"
+                                                        title="YouTube video player" frameborder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowfullscreen>
+                                                    </iframe>
+                                                </div>
+
+                                                <div class="col-12 col-lg-6">
+                                                    <h2>Mãe! (<i>Mother!</i>)</h2>
+                                                    <p><strong>Sinopse:</strong> Uma mulher pensa que terá um final de
+                                                        semana tranquilo com o marido em casa. Porém, começam a chegar
+                                                        diversos convidados na residência dos dois. Isso faz com que o
+                                                        casamento deles seja testado das mais variadas maneiras.</p>
+                                                    <p><strong>Diretor:</strong> Darren Aronofsky&nbsp;&nbsp;
+                                                        <strong>Roteirista:</strong> Darren Aronofsky&nbsp;&nbsp;
+                                                        <strong>Estreia:</strong> 2017
+                                                    </p>
+                                                    <p><strong>Elenco:</strong><br>
+                                                        Jennifer Lawrence | Javier Bardem | Michelle Pfeiffer | Ed
+                                                        Harris</p>
+                                                    <p><strong>Avaliação:</strong><br>
+                                                        <span class="starAmarela">&starf; &starf; &starf;
+                                                        </span>&frac12;
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div class="row itemTrailer">
+                                                <div class="col-12 col-lg-6">
+                                                    <iframe width="560" height="315"
+                                                        src="https://www.youtube.com/embed/tivv135aGbc"
+                                                        title="YouTube video player" frameborder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowfullscreen>
+                                                    </iframe>
+                                                </div>
+
+                                                <div class="col-12 col-lg-6">
+                                                    <h2>Django Livre</h2>
+                                                    <p><strong>Sinopse:</strong> No sul dos Estados Unidos, o ex-escravo
+                                                        Django faz uma aliança inesperada com o caçador de recompensas
+                                                        Schultz para caçar os criminosos mais procurados do país e
+                                                        resgatar sua esposa de um fazendeiro que força seus escravos a
+                                                        participar de competições mortais.</p>
+                                                    <p><strong>Diretor:</strong> Quentin Tarantino&nbsp;&nbsp;
+                                                        <strong>Roteirista:</strong> Quentin Tarantino&nbsp;&nbsp;
+                                                        <strong>Estreia:</strong> 2012
+                                                    </p>
+                                                    <p><strong>Elenco:</strong><br>
+                                                        Jamie Foxx | Christoph Waltz | Leonardo DiCaprio | Kerry
+                                                        Washington | Samuel L. Jackson</p>
+                                                    <p><strong>Avaliação:</strong><br>
+                                                        <span class="starAmarela carrosel">&starf; &starf; &starf;
+                                                            &starf;
+                                                        </span>&frac12;
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div class="row itemTrailer">
+                                                <div class="col-12 col-lg-6">
+                                                    <iframe width="560" height="315"
+                                                        src="https://www.youtube.com/embed/Q9X-bAE8KTc"
+                                                        title="YouTube video player" frameborder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowfullscreen id="trailer3">
+                                                    </iframe>
+                                                </div>
+
+                                                <div class="col-12 col-lg-6">
+                                                    <h2>Deadpool</h2>
+                                                    <p><strong>Sinopse:</strong> Wade Wilson é um ex-agente especial que
+                                                        passou a trabalhar como mercenário. Seu mundo é destruído quando
+                                                        um cientista maligno o tortura e o desfigura completamente. O
+                                                        experimento brutal transforma Wade em Deadpool, que ganha
+                                                        poderes especiais de cura e uma força aprimorada. Com a ajuda de
+                                                        aliados poderosos e um senso de humor mais desbocado e cínico do
+                                                        que nunca, o irreverente anti-herói usa habilidades e métodos
+                                                        violentos para se vingar do homem que quase acabou com a sua
+                                                        vida.</p>
+                                                    <p><strong>Diretor:</strong> Tim Miller&nbsp;&nbsp;
+                                                        <strong>Roteirista:</strong> Rhett Reese e Paul
+                                                        Wernick&nbsp;&nbsp;
+                                                        <strong>Estreia:</strong> 2016
+                                                    </p>
+                                                    <p><strong>Elenco:</strong><br>
+                                                        Ryan Reynolds | Morena Baccarin | Ed Skrein | T. J. Miller |
+                                                        Gina Carano | Brianna Hildebrand</p>
+                                                    <p><strong>Avaliação:</strong><br>
+                                                        <span class="starAmarela carrosel">&starf; &starf; &starf;
+                                                            &starf;
+                                                        </span>&frac12;
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Seção Em Destaque -->
+                    <section id="destaques">
+                        <div class="row">
+                            <div class="col-12">
+
+                                <!-- Título -->
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h1 class="tit2">Em Destaque</h1>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <div class="dropdown">
+                                            <button class="btn btn-outline-light dropdown-toggle" type="button"
+                                                id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                Categorias: TODOS
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Aventura</a></li>
+                                                <li><a class="dropdown-item" href="#">Romance</a></li>
+                                                <li><a class="dropdown-item" href="#">Comédia</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Cards -->
+                                <div class="row">
+                                    <div class="col-6 col-lg-3"><img class="imagemBanner" src="img/bannerMae.jpg"></div>
+                                    <div class="col-6 col-lg-3"><img class="imagemBanner" src="img/bannerDjango.jpg">
+                                    </div>
+                                    <div class="col-6 col-lg-3"><img class="imagemBanner" src="img/bannerDeadpool.png">
+                                    </div>
+                                    <div class="col-6 col-lg-3"><img class="imagemBanner" src="img/bannerToyStory.jpg">
+                                    </div>
+                                </div>
+
+                                <!-- Botão mais Filmes -->
+                                <div class="row">
+                                    <div class="col-12 d-grid d-md-flex justify-content-md-end">
+                                        <button type="button" class="btn btn-secondary"><i class="fas fa-plus"></i>
+                                            &nbsp;Carregar mais filmes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Seção de Avaliações -->
+                    <section id="notasArea">
+                        <div class="row">
+                            <div class="col-12">
+
+                                <!-- Título -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h1>Últimas Avaliações</h1>
+                                    </div>
+                                </div>
+
+                                <!-- Avaliações -->
+                                <div class="row notasUser">
+                                    <div class="col-6 col-xl-4">
+                                        <div class="row">
+                                            <div class="col-12 col-md-3"><img class="icon" src="img/iconEdu.jpg">
+                                            </div>
+                                            <div class="col-12 col-md-9 notaTexto">
+                                                <h4>Eduardo Contaldo</h4>
+                                                <p><strong>Avaliação:</strong> Um site bem estruturado e
+                                                    apresentável, bastante intuitivo e de fácil acesso para o usuário
+                                                    permitindo assim uma ótima e tranquila experiência na hora de achar
+                                                    seus filmes favoritos.</p>
+                                                <p><span class="starAmarela">&starf; &starf; &starf; &starf; &starf;
+                                                    </span>&nbsp;&nbsp;23/04/2021</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 col-xl-4">
+                                        <div class="row">
+                                            <div class="col-12 col-md-3"><img class="icon" src="img/iconVitao.jpg">
+                                            </div>
+                                            <div class="col-12 col-md-9 notaTexto">
+                                                <h4>Victor Filocre</h4>
+                                                <p><strong>Avaliação:</strong> Um site com bom enquadramento, ótimas
+                                                    cores e belas recomendações de filmes. Para um primeiro site está
+                                                    muito bem feito.</p>
+                                                <p><span class="starAmarela">&starf; &starf; &starf; &starf;
+                                                    </span>&frac12;&nbsp;&nbsp;24/04/2021</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-4">
+                                        <div class="row">
+                                            <div class="col-xl-3"><img class="icon" src="img/IconRafa.jpg"></div>
+                                            <div class="col-xl-9 notaTexto">
+                                                <h4>Rafaela Cristina</h4>
+                                                <p><strong>Avaliação:</strong> Site bem organizado e bem dividido,
+                                                    designer agradável, tópicos bem desenvolvidos e objetivos e de fácil
+                                                    compreensão.</p>
+                                                <p><span class="starAmarela">&starf; &starf; &starf; &starf; &starf;
+                                                    </span>&nbsp;&nbsp;23/04/2021</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Botão mais Avaliações -->
+                                <div class="row">
+                                    <div class="col-12 d-grid d-md-flex justify-content-md-end">
+                                        <button type="button" class="btn btn-secondary"><i class="fas fa-plus"></i>
+                                            &nbsp;Carregar mais avaliações</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Seção de Entrevistas & Making-of -->
+                    <section id="interviewArea">
+                        <div class="row">
+                            <div class="col-12">
+
+                                <!-- Título -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h1 class="tit2">Entrevistas & Making-of</h1>
+                                    </div>
+                                </div>
+
+                                <!-- Vídeos -->
+                                <div class="row videoInter">
+                                    <div class="col-12 col-md-6 col-xl-4">
+                                        <iframe width="300" height="225" src="https://www.youtube.com/embed/4KZODJfPKN4"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen>
+                                        </iframe>
+                                        <p class="titFilme"><strong>Filme:</strong> Toy Story 4</p>
+                                        <p><strong>Diretor:</strong> Josh Cooley<br>
+                                            <strong>Roteiro:</strong> John Lasseter, +7 <strong>Estreia:</strong> 2019
+                                        </p>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-xl-4">
+                                        <iframe width="300" height="225" src="https://www.youtube.com/embed/QjEUcEW79gk"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen>
+                                        </iframe>
+                                        <p class="titFilme"><strong>Filme:</strong> 17 Outra Vez</p>
+                                        <p><strong>Diretor:</strong> Burr Steers<br>
+                                            <strong>Roteiro:</strong> Jason Filardi <strong>Estreia:</strong> 2009
+                                        </p>
+                                    </div>
+
+                                    <div class="col-xl-4">
+                                        <iframe width="300" height="225" src="https://www.youtube.com/embed/tZNBy-BdM2A"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen>
+                                        </iframe>
+                                        <p class="titFilme"><strong>Filme:</strong> Coringa</p>
+                                        <p><strong>Diretor:</strong> Todd Phillips<br>
+                                            <strong>Roteiro:</strong> Paul Barrett, +2 <strong>Estreia:</strong> 2019
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Botão mais Filmes -->
+                                <div class="row">
+                                    <div class="col-12 d-grid d-md-flex justify-content-md-end">
+                                        <button type="button" class="btn btn-secondary"><i class="fas fa-plus"></i>
+                                            &nbsp;Carregar mais vídeos</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Pré-Rodapé -->
+                    <section id="preRodape">
+                        <div class="row">
+                            <div class="col-12">
+
+                                <div class="row">
+
+                                    <!-- Novidades -->
+                                    <div class="col-12 col-xl-8">
+
+                                        <!-- Título -->
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h1>Novidades</h1>
+                                            </div>
+                                        </div>
+
+                                        <!-- Matérias -->
+                                        <div class="row">
+                                            <div class="col-12">
+
+                                                <div class="row newsCard">
+                                                    <div class="col-12 col-md-5 col-lg-4">
+                                                        <img class="iconNoticia" src="img/noticia1.jpg">
+                                                    </div>
+
+                                                    <div class="co-12 col-md-7 col-lg-8">
+                                                        <h4>Entenda a cena pós-créditos do episódio final de Falcão e o
+                                                            Soldado Invernal</h4>
+
+                                                        <p>Capítulo prepara o terreno para novo vilão dominar o submundo
+                                                            do crime do MCU e trazer mais ação para novíssima série da
+                                                            Marvel.</p>
+
+                                                        <p class="tags"><b>MCU</b>
+                                                            <b>Disney+</b>
+                                                            <b>Marvel</b>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="barraDivisoria"></div>
+
+                                                <div class="row newsCard">
+                                                    <div class="col-12 col-md-5 col-lg-4">
+                                                        <img class="iconNoticia" src="img/noticia2.jpg">
+                                                    </div>
+
+                                                    <div class="col-12 col-md-7 col-lg-8">
+                                                        <h4>James Gunn celebra finalização do roteiro do especial de
+                                                            Guardiões da Galáxia</h4>
+
+                                                        <p>História de fim de ano foi anunciada no dia dos investidores
+                                                            da Disney em dezembro de 2020 e um grande presente está
+                                                            vindo, diz James Gunn.</p>
+
+                                                        <p class="tags"><b>MCU</b>
+                                                            <b>Disney+</b>
+                                                            <b>Marvel</b>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="barraDivisoria"></div>
+
+                                                <div class="row newsCard">
+                                                    <div class="col-12 col-md-5 col-lg-4">
+                                                        <img class="iconNoticia" src="img/noticia3.jpg">
+                                                    </div>
+
+                                                    <div class="col-12 col-md-7 col-lg-8">
+                                                        <h4>Invocação do Mal 3 | Casal Warren está de volta no primeiro
+                                                            trailer</h4>
+
+                                                        <p>Baseado em fatos, A Ordem do Demônio estreia em junho nos EUA
+                                                            e promete ser aterrorizante.</p>
+
+                                                        <p class="tags"><b>Invocação do Mal 3</b>
+                                                            <b>Terror</b>
+                                                            <b>Warren</b>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Sobre -->
+                                    <div class="col-12 col-xl-4">
+
+                                        <!-- Título -->
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h1>Sobre</h1>
+                                                <p>Collider surgiu em 2019 criado por um grupo de amigos no Ensino Médio
+                                                    que adoravam conversar sobre filmes, séries e cultura pop, sendo
+                                                    idealizado
+                                                    por Hugo, possuindo dois grandes cinéfilos encabeçando a Redação e
+                                                    ótimos
+                                                    pesquisadores sempre antenados para repassar as informações para a
+                                                    Redação.
+                                                    Nos dias atuais, a Collider é o maior Portal de Filmes da América
+                                                    Latina.</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Editorial -->
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h1>Editorial</h1>
+                                                <p><i class="fas fa-user-friends"></i><strong> Redação:</strong> Davi
+                                                    Gomes,
+                                                    Marcelo Lommez</p>
+                                                <p><i class="fas fa-user-friends"></i><strong> Pesquisa:</strong> Victor
+                                                    Filocre, Adriano Ricco</p>
+                                                <p><i class="fas fa-user"></i><strong> Gerente Geral:</strong> Hugo
+                                                    Cesar</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Redes Sociais -->
+                                        <div class="row">
+                                            <div class="col-12 socialMedia">
+                                                <strong>Redes Sociais:</strong><br>
+                                                <a href="https://www.facebook.com/collider"><i
+                                                        class="fab fa-facebook-square"></i></a>
+                                                <a href="https://twitter.com/collider"><i
+                                                        class="fab fa-twitter-square"></i></a>
+                                                <a href="https://www.instagram.com/collider/"><i
+                                                        class="fab fa-instagram-square"></i></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </main>
+
+        <footer class="container">
+            <div class="row rodape">
+                <div class="col-10 col-sm-8 col-md-10">
+                    <p></p>&copy; 2021 - Disciplina de Desenvolvimento de Interfaces Web - <strong>ICEI PUC
+                        Minas</strong>
+                </div>
+
+                <div class="col-2 col-sm-4 col-md-2">
+                    <img src="img/logo.png" id="logo">
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+            integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+            integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>

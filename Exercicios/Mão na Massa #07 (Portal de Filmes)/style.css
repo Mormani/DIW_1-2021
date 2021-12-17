@@ -1,0 +1,685 @@
+/* Cabeçalho */
+
+.header_area {
+
+    padding: 20px;
+    background-color: #151515;
+}
+
+#logo {
+
+    width: 130px;
+}
+
+    /** Navegação **/
+
+.nav a {
+
+    color: white;
+}
+
+.nav a:hover {
+
+    background-color: #303030;
+}
+
+.nav a.active {
+
+    background-color: #606060;
+}
+
+#menuToggle {
+    
+    display: none;
+}
+
+.menu-icon {
+
+    display: none;
+    
+}
+
+.menu-icon i {
+    
+    display: none;
+}
+
+
+    /** Barra de Pesquisa **/
+
+#pesquisa {
+
+    padding: 5px;
+    border: 0px solid;
+    border-radius: 15px;
+    background-color: #505050;
+}
+
+#barraBusca button {
+
+    border: 0px;
+    background-color: transparent;
+}
+
+/* Corpo */
+
+#lancamentos, #notasArea, #preRodape {
+
+    background-color: #49BF3C;
+}
+
+.tit1 {
+
+    margin: 30px;
+    text-align: center;
+}
+
+    /** Carrosel de Lançamentos **/
+
+.secaoTrailer {
+
+    padding: 15px;
+}
+
+.carousel-indicators {
+
+    margin-bottom: 0px;
+}
+
+#trailer3 {
+
+    margin-top: 9%;
+}
+
+.itemTrailer h2 {
+
+    padding: 0px 15px;
+}
+
+.itemTrailer p {
+
+    font-size: 0.95em;
+    padding: 0px 20px;
+}
+
+.starAmarela {
+
+    font-size: 1.5em;
+    color: yellow;
+}
+
+    /** Área de Destaques **/
+
+#destaques, #interviewArea {
+
+    padding: 15px;
+    background-color: #606060;
+}
+
+.tit2 {
+
+    color: white;
+}
+
+.dropdown {
+
+    float: right;
+}
+
+.imagemBanner {
+
+    height: 330px;
+    margin: 10px;
+}
+
+    /** Área de Notas **/
+
+#notasArea {
+
+    padding: 10px;
+}
+
+#notasArea h1 {
+
+    padding: 10px;
+}
+
+.icon {
+
+    width: 90px;
+    border-radius: 50%;
+}
+
+.notaTexto p {
+
+    font-size: 0.8em;
+}
+
+    /** Área de Entrevistas **/
+
+#interviewArea {
+
+    color: whitesmoke;
+}
+
+    /** Pré-Rodapé **/
+
+#preRodape {
+
+    padding: 15px;
+}
+
+.newsCard {
+
+    padding: 10px 0px;
+}
+
+.iconNoticia {
+
+    width: 230px;
+}
+
+.newsCard p {
+
+    font-size: 0.95em;
+}
+
+.tags b {
+
+    padding: 3px;
+    margin: 3px;
+    border: solid 1px #1c8011;
+    border-radius: 10px;
+    font-weight: normal;
+    font-style: italic;
+    color: #fff;
+    background-color: #1c8011;
+}
+
+.barraDivisoria {
+
+    border: solid 2px black;
+}
+
+.socialMedia a i {
+
+    font-size: 50px;
+    color: black;
+}
+
+/* Rodapé */
+
+.rodape {
+
+    padding: 20px;
+    color: white;
+    background-color: #151515;
+}
+
+/* Media Queries */
+
+    /** .col-lg-x **/
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    /** Cabeçalho **/
+
+    #logo {
+
+        width: 90px;
+    }
+
+    .nav a {
+
+        font-size: 0.72em;
+    }
+
+    /** Corpo **/
+
+    div > iframe {
+
+        width: 450px;
+    }
+
+    .imagemBanner {
+
+        width: 195px; 
+    }
+
+    .notasUser > div:nth-child(3) {
+
+        display: none;
+    }
+
+    .videoInter > div:nth-child(3) {
+
+        display: none;
+    }
+
+    .iconNoticia {
+
+        width: 290px;
+    }
+
+}
+
+    /** .col-md-x **/
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    /** Menu Mobile **/
+
+    .caixa_nav {
+
+        width: 100%;
+        height: 100%;
+        margin-bottom: 15px;
+        display: absolute;
+    }
+
+    .caixa_nav > .nav {
+
+        width: 100%;
+        height: 0%;
+        display: flex;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        flex-wrap: wrap;
+        align-content: center;
+        overflow: hidden;
+        -webkit-transition: height 0.3s;
+        -moz-transition: height 0.3s;
+        -ms-transition: height 0.3s;
+        -o-transition: height 0.3s;
+        transition: height 0.3s;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    .caixa_nav .nav a { 
+        
+        width: 100%;
+        margin-bottom: 20px;
+        display: block;
+        text-align: center;
+    }
+    
+    .menu-icon {
+
+        top: 25px;
+        bottom: 0px;
+        right: 15%;
+        display: block;
+        position: absolute;
+        z-index: 2;
+        color: white;
+    }
+    
+    .menu-icon i {
+        
+        font-size: 1.7em;
+    }
+    
+    #menuToggle:checked ~ label i:first-child {
+    
+        display: none;
+    }
+
+    #menuToggle:checked ~ label i:nth-child(2) {
+
+        display: block;
+        position: fixed;
+    }
+    
+    #menuToggle:not(checked) ~ label i:first-child {
+
+        display: block;    
+    }
+    
+    #menuToggle:not(checked) ~ label i:nth-child(2) {
+    
+        display: none;
+    }
+    
+    #menuToggle:checked ~ .nav {
+    
+        height: 100%;
+    }
+
+    #barraBusca > input, #barraBusca > button {
+
+        float: right;
+    }
+
+    /** Corpo **/
+
+    #trailer3 {
+
+        margin-top: 0px;
+    }
+
+    .icon {
+
+        width: 80px;
+    }
+
+    .notasUser > div:nth-child(3) {
+
+        display: none;
+    }
+
+    .videoInter > div:nth-child(3) {
+
+        display: none;
+    }
+
+    /** Rodapé **/
+
+    .rodape {
+
+        font-size: 0.95em;
+    }
+
+    .rodape p {
+
+        display: none;
+    }
+
+    footer #logo {
+
+        width: 100px;
+    }
+}
+
+    /** .col-sm-x **/
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+    /** Menu Mobile **/
+
+    .caixa_nav {
+
+        width: 100%;
+        height: 100%;
+        margin-bottom: 15px;
+        display: absolute;
+    }
+
+    .caixa_nav > .nav {
+
+        width: 100%;
+        height: 0%;
+        display: flex;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        flex-wrap: wrap;
+        align-content: center;
+        overflow: hidden;
+        -webkit-transition: height 0.3s;
+        -moz-transition: height 0.3s;
+        -ms-transition: height 0.3s;
+        -o-transition: height 0.3s;
+        transition: height 0.3s;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    .caixa_nav .nav a { 
+        
+        width: 100%;
+        margin-bottom: 20px;
+        display: block;
+        text-align: center;
+    }
+    
+    .menu-icon {
+
+        top: 25px;
+        bottom: 0px;
+        right: 17%;
+        display: block;
+        position: absolute;
+        z-index: 2;
+        color: white;
+    }
+    
+    .menu-icon i {
+        
+        font-size: 1.7em;
+    }
+    
+    #menuToggle:checked ~ label i:first-child {
+    
+        display: none;
+    }
+
+    #menuToggle:checked ~ label i:nth-child(2) {
+
+        display: block;
+        position: fixed;
+    }
+    
+    #menuToggle:not(checked) ~ label i:first-child {
+
+        display: block;    
+    }
+    
+    #menuToggle:not(checked) ~ label i:nth-child(2) {
+    
+        display: none;
+    }
+    
+    #menuToggle:checked ~ .nav {
+    
+        height: 100%;
+    }
+
+    #barraBusca > input, #barraBusca > button {
+
+        float: right;
+    }
+
+    /** Corpo **/
+
+    #trailer3 {
+
+        margin-top: 0px;
+    }
+
+    .imagemBanner {
+
+        width: 215px;
+    }
+
+    .icon {
+
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .notasUser > div:nth-child(3) {
+
+        display: none;
+    }
+
+    .videoInter > div > iframe, .videoInter > div > p {
+
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    .newsCard img {
+
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+     /** Rodapé **/ 
+
+    .rodape {
+
+        font-size: 0.95em;
+    }
+
+    .rodape p {
+
+        display: none;
+    }
+
+    footer #logo {
+
+        width: 100px;
+    }
+}
+
+    /** .col-x **/
+
+@media screen and (max-width: 575px) {
+
+    /** Menu Mobile **/
+
+    .caixa_nav {
+
+        width: 100%;
+        height: 100%;
+        margin-bottom: 15px;
+        display: absolute;
+    }
+
+    .caixa_nav > .nav {
+
+        width: 100%;
+        height: 0%;
+        display: flex;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        flex-wrap: wrap;
+        align-content: center;
+        overflow: hidden;
+        -webkit-transition: height 0.3s;
+        -moz-transition: height 0.3s;
+        -ms-transition: height 0.3s;
+        -o-transition: height 0.3s;
+        transition: height 0.3s;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    .caixa_nav .nav a { 
+        
+        width: 100%;
+        margin-bottom: 20px;
+        display: block;
+        text-align: center;
+    }
+    
+    .menu-icon {
+
+        top: 25px;
+        bottom: 0px;
+        right: 17%;
+        display: block;
+        position: absolute;
+        z-index: 2;
+        color: white;
+    }
+    
+    .menu-icon i {
+        
+        font-size: 1.7em;
+    }
+    
+    #menuToggle:checked ~ label i:first-child {
+    
+        display: none;
+    }
+
+    #menuToggle:checked ~ label i:nth-child(2) {
+
+        display: block;
+        position: fixed;
+    }
+    
+    #menuToggle:not(checked) ~ label i:first-child {
+
+        display: block;    
+    }
+    
+    #menuToggle:not(checked) ~ label i:nth-child(2) {
+    
+        display: none;
+    }
+    
+    #menuToggle:checked ~ .nav {
+    
+        height: 100%;
+    }
+
+    #barraBusca > input, #barraBusca > button {
+
+        float: right;
+    }
+
+    /** Corpo **/
+
+    #trailer3 {
+
+        margin-top: 0px;
+    }
+
+    .imagemBanner {
+
+        width: 215px;
+    }
+
+    .icon {
+
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .notasUser > div:nth-child(3) {
+
+        display: none;
+    }
+
+    .videoInter > div > iframe, .videoInter > div > p {
+
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    .newsCard img {
+
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+     /** Rodapé **/ 
+
+    .rodape {
+
+        font-size: 0.95em;
+    }
+
+    .rodape p {
+
+        display: none;
+    }
+
+    footer #logo {
+
+        width: 80px;
+    }
+}

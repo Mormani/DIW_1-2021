@@ -1,0 +1,93 @@
+/* Cabeçalho */
+
+header {
+
+    background-color: #6e3e8a;
+    text-align: center;
+}
+
+.header_area {
+
+    padding: 20px;
+}
+
+.logo {
+
+    width: 150px;
+}
+
+.menu_area {
+
+    padding: 30px;
+}
+
+.menu_area .nav a {
+
+    margin-bottom: 10px;
+    background-color: #5f3d75;
+    color: white;
+}
+
+.active {
+
+    background-color: #402253 !important;
+}
+
+.menu_area nav a:hover {
+
+    background-color: #764c92;
+}
+
+/* Corpo */
+
+main {
+
+    margin: 20px;
+}
+
+main .card {
+
+    margin-bottom: 15px;
+}
+
+.carrosel {
+
+    margin-bottom: 20px;
+}
+
+.menu_area2 {
+
+    padding: 30px;
+}
+
+.menu_area2 .nav a {
+
+    margin-bottom: 10px;
+    background-color: #eea010;
+    color: white;
+}
+
+.menu_area2 nav a:hover {
+
+    background-color: #eeb868;
+}
+
+.modal-body img {
+
+    width: 100%;
+}
+
+/* Rodapé */
+
+footer {
+
+    background-color: #6e3e8a;
+    color: white;
+}
+
+.footer_area {
+
+    padding: 20px;
+    text-align: center;
+}
+

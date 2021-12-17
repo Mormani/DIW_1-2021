@@ -1,0 +1,44 @@
+#calculadora {
+
+    width: 30rem;
+}
+
+#calculadora .card-header {
+
+    background-color: black;
+}
+
+#calculadora #display {
+    
+    font-size: 30pt;
+    text-align: right;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+#calculadora .card-body {
+
+    background-color: #994522;
+}
+
+#calculadora button {
+
+    height: 3em;
+    margin: 5px;
+}
+
+#calculadora #bt-marca {
+
+    border: none;
+    font-size: 11.25pt;
+    opacity: unset;
+    color: black;
+}
+
+#calculadora .button-text {
+
+    font-size: 16pt;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}

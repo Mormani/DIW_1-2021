@@ -1,0 +1,67 @@
+index.html
+    <!--
+    <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="0"
+        class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    -->
+
+    <!--
+    <div class="carousel-item active">
+        <div class="row">
+
+            <div class="col-12 col-lg-6">
+                <img src="img/noticia1.jpg" alt="...">
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <h2>Mãe! (<cite>Mother!</cite>)</h2>
+                <p>
+                    <strong>Sinopse:</strong> Uma mulher pensa que terá um final de
+                    semana tranquilo com o marido em casa. Porém, começam a chegar
+                    diversos convidados na residência dos dois. Isso faz com que o
+                    casamento deles seja testado das mais variadas maneiras.
+                </p>
+                <p>
+                    <strong>Diretor:</strong> &nbsp;&nbsp;
+                    <strong>Roteirista:</strong> &nbsp;&nbsp;
+                    <strong>Estreia:</strong> 
+                </p>
+                <p><strong>Elenco:</strong><br>
+
+                </p>
+                <p>
+                    <strong>Avaliação:</strong><br>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    -->
+
+    <!--
+    <div class="col-12 col-sm-6 col-lg-3 bannerCartaz">
+        <img src="img/bannerDeadpool.png" alt="...">
+    </div>
+    -->
+
+    <!--
+    <div class="row cardNoticia">
+        <div class="col-12 col-sm-4">
+            <img class="iconNoticia" src="img/noticia1.jpg" alt="...">
+        </div>
+
+        <div class="col-12 col-sm-8">
+            <h5>Título Notícia</h5>
+            <h6>Autor</h6>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, rerum! Facilis,
+                eligendi fugit. Libero, enim fuga. A, tenetur ex temporibus tempore libero
+                corporis veniam provident sunt enim eos minus nesciunt.
+                <a target="_blank" href="#">Leia mais...</a>
+            </p>
+        </div>
+    </div>
+    -->

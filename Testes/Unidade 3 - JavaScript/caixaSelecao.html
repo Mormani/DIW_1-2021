@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+            window.onload = () => {
+
+                nome.onchange = () => console.log(nome.value);
+                salada.onchange = () => console.log(salada.value);
+                molho1.onchange = () => console.log(molho1.value);
+                molho2.onchange = () => console.log(molho2.value);
+                molho3.onchange = () => console.log(molho3.value);
+                pao.onchange = () => console.log(pao.value);
+                sobremesa.onchange = () => console.log(sobremesa.value);
+                sobremesa.onchange = () => console.log(sobremesa.checked);
+            }
+        </script>
+
+        <title>Caixas de Seleção</title>
+    </head>
+
+    <body>
+        <p>
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" name="nnome" autocomplete="off">
+            <span id="instrucoes"></span>
+        </p>
+        <p>
+            <label for="salada">Salada</label>
+            <select name="nsalada" id="salada">
+                <option value="0">Verde (folhas e palmito)</option>
+                <option value="1">Caprese</option>
+                <option value="2">Caesar</option>
+                <option value="3">Rúcula e pêras</option>
+                <option value="4" selected>Salmão</option>
+            </select>
+        </p>
+        <p>
+            Molho:
+            <input type="radio" value="0" name="nmolho" id="molho1" checked><label for="molho1">Nenhum</label>
+            <input type="radio" value="1" name="nmolho" id="molho2"><label for="molho2">Mostarda e Mel</label>
+            <input type="radio" value="2" name="nmolho" id="molho3"><label for="molho3">Queijos</label>
+        </p>
+        <p>
+            Complementos:
+            <input type="checkbox" name="npao" id="pao" checked><label for="pao">Pão francês</label>
+            <input type="checkbox" name="nsobremesa" id="sobremesa"><label for="sobremesa">Sobremesa</label>
+
+        </p>
+    </body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+
+            onload = () => {
+
+                if(localStorage.getItem("user")) {
+                    
+                    nome.value = JSON.parse(localStorage.getItem("user")).nome;
+                }
+
+                login.onsubmit = (evento) => {
+
+                    let user = {nome: nome.value, senha: senha.value};
+
+                    localStorage.setItem("user", JSON.stringify(user));         //Armazenamento permanente
+                    //sessionStorage                                            //Armazenamento temporario
+                    //localStorage.clear                                        //Apaga tudo
+
+                    evento.preventDefault();
+                }
+            }
+
+            /*
+            let usuario = {
+
+                nome: "Marcos",
+                senha: "1234",
+            };
+
+            let str = JSON.stringify(usuario);
+            console.log(str);                       //{"nome":"Marcos","senha":"1234"}
+
+            let usuario2 = JSON.parse(str);
+            console.log(usuario2);
+            */
+
+        </script>
+
+        <title>JSON e Web Storage</title>
+    </head>
+
+    <body>
+        <h1>JavaScript Object Notation e Web Storage</h1>
+        <form id="login" action="https://postman-echo.com/post" method="POST">
+            <p>
+                <label for="nome">Nome: </label>
+                <input id="nome" type="text" name="nome" autocomplete="off">
+            </p>
+            
+            <p>
+                <label for="senha">Senha: </label>
+                <input id="senha" type="password" name="senha">
+            </p>
+
+            <p><button type="submit">Confirmar</button></p>
+        </form>
+    </body>
+
+</html>

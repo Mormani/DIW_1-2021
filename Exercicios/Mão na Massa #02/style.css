@@ -1,0 +1,105 @@
+* {
+
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+
+    height: 100%;
+}
+
+body {
+
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer {
+
+    padding: 20px;
+    color: white;
+    background-color: dimgray;
+}
+
+/*
+ * Cabeçalho
+ */
+
+header {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#logo a {
+
+    text-decoration: none;
+}
+
+h1 {
+
+    padding-top: 7px;
+}
+
+
+nav a {
+
+    text-decoration: none;
+}
+
+ul {
+
+    display: flex;
+    padding-left: 500px;
+}
+
+ul>li {
+
+    padding: 20px;
+    list-style: none;
+}
+
+a:link, a:visited {
+
+    color: white;
+}
+
+/*
+ * Principal
+ */
+
+main {
+
+    max-width: 800px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main > div {
+
+    margin: 10px;
+    flex: 1 1 200px;
+}
+
+main img {
+
+    max-width: 100%;
+    display: block;
+}
+
+main p {
+
+    text-align: center;
+}
+
+/*
+ * Rodapé
+ 
+
+footer {
+
+    
+}*/

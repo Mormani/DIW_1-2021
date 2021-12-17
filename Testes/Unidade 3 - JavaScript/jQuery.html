@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="../jquery-3.6.0.min.js"></script>
+
+        <script>
+            $(document).ready(
+                
+                function() {
+
+                    /*$("h1").css("background-color", "#fcc");
+                    $("*").css("font-family", "Arial, Helvetica, sans-serif");
+                    $("li:even").css("background-color", "#f00");
+                    $("li:odd").css("background-color", "#00f");*/
+
+                    $("#mais1").click(
+
+                        function() {
+
+                            let valor = parseInt($("#contador").text());
+                            $("#contador").text(valor + 1);
+
+                            $("#menos1").prop("disabled", false);
+                        }
+                    );
+
+                    $("#menos1").click(
+
+                        function() {
+
+                            let valor = parseInt($("#contador").text());
+                            valor--;
+
+                            if(valor >= 0) {
+
+                                $("#contador").text(valor);
+                            }
+                            
+                            if(valor == 0) {
+                                
+                                $("#menos1").prop("disabled", true);
+                            }
+                        }
+                    );
+
+                    $("#mais1").click(
+
+                        function() {
+
+                            $("#lista").append(
+
+                                $("<li>Item</li>")
+                            )
+                        }
+                    );
+
+                    let img = $("<img >", {
+
+                        id: "foto",
+                        alt: "Foto do Unsplash",
+                        src: "https://source.unsplash.com/random/400x400",
+                    });
+                    $("#p1").append(img);
+
+                    let para = $("<p></p>", {
+
+                        id: "p2",
+                        html: "Segundo <strong>parágrafo</strong>"
+                    });
+                    $("#div1").append(para);
+                });
+        </script>
+
+        <title>jQuery</title>
+    </head>
+
+    <body>
+        <h1>jQuery</h1>
+        <!--<p>Testes com jQuery</p>
+        <p>Faremos os seguintes testes:</p>
+        <ul>
+            <li>Testes de seletores</li>
+            <li>Testes de alteração de conteúdo</li>
+            <li>Testes de alteração de formatação</li>
+            <li>Testes de criação de comportamento</li>
+        </ul>-->
+
+        <p>Contador: <span id="contador">0</span></p>
+        <p>
+            <button id="mais1">+1</button><button id="menos1">-1</button>
+        </p>
+
+        <ul id="lista"></ul>
+
+        <div id="div1">
+            <p id="p1"></p>
+        </div>
+    </body>
+
+</html>

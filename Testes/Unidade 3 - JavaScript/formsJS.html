@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+            window.onload = () => {
+
+                console.log(nome.value);
+
+                //nome.onchange = () => console.log(nome.value);      // Verifica a alteracao apos sair do foco da caixa de texto
+                //senha.onchange = () => console.log(senha.value);
+                
+                
+                nome.oninput = () => {                              // Verifica a alteracao apos cada texto digitado
+                    
+                    let charInvalidos = `!@#$%¨&*()-=<>,.;[]{}`;
+                    let ultimoChar = nome.value.charAt(nome.value.length - 1);
+                    
+                    
+                    if(charInvalidos.indexOf(ultimoChar) >= 0) {
+                        
+                        /*let nome = "Marcos";
+                        * nome.indexOf("M");
+                        * => 0
+                        * nome.indexOf("z");
+                        * => -1
+                        */
+                       
+                       nome.value = nome.value.substr(0, nome.value.length - 1);
+                    }
+                    
+                    nome.value = nome.value.toUpperCase();
+                    console.log(nome.value);
+                }
+                
+                //nome.onfocus = () => console.log("Alteração Iniciada");
+                //nome.onblur = () => console.log("Alteração Concluída");
+                
+                nome.onfocus = () => {
+
+                    instrucoes.innerHTML = "Informe o seu nome";
+                    instrucoes.style.color = "#999";
+                };
+
+                nome.onblur = () =>  {
+
+                    if(nome.value.length == 0) {
+                        
+                        //instrucoes.innerHTML = "O nome não pode ficar em branco!";
+                        instrucoes.innerHTML = "*";
+                        instrucoes.style.color = "#F00";
+                        nome.style.border = "thin red solid";
+                    } else {
+                        
+                        instrucoes.innerHTML = "";
+                    }
+                };
+
+                senha.oninput = () => console.log(senha.value.length);
+            };
+        </script>
+
+        <title>Formulários em JS</title>
+    </head>
+
+    <body>
+        <!-- action: Enviar dados de um formulario para um arquivo, POST: Os dados irao escondido  -->
+        <form action="login.php" method="POST" >
+            <p>
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" autocomplete="off">
+                <span id="instrucoes"></span>
+            </p>
+            <p>
+                <label for="senha">Senha: </label>
+                <input type="password" id="senha" name="senha">
+            </p>
+            <p>
+                <button type="submit">Enviar</button>
+            </p>
+        </form>
+    </body>
+
+</html>

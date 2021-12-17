@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+            let a = 2;
+            console.log(a * 2);
+            
+            function ola() {
+                
+                console.log("Olá Mundo em JavaScript!");
+            }
+            
+            function ola2() {       // Janela Modal
+                
+                alert("Olá Mundo em JavaScript!");
+            }
+
+            function ola3() {       // Janela Modal com pergunta
+                
+                let nome = prompt("Qual é o seu nome?", "Fulano de Tal");
+                alert(`Olá ${nome}!`);
+            }
+
+            function confirma() {   // Janela Modal com confirmação
+                
+                let confirma = confirm("Você confirma a operação?");
+                if(confirma) {
+
+                    alert("Operação CONFIRMADA!");
+                } else {
+                    
+                    alert("Operação CANCELADA!");
+                }
+            }
+            
+            window.onload = () => {
+                
+                bt.onclick = () => alert("Olá Mundo em JavaScript, só que diferente!");
+            }
+        </script>
+
+        <title>JS on Pages</title>
+    </head>
+
+    <body>
+        <p><button id="bt">Olá</button></p>
+    </body>
+
+</html>

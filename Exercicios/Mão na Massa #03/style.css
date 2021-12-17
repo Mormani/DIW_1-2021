@@ -1,0 +1,120 @@
+/*
+ * Definições Gerais
+ */
+
+* {
+
+    margin: 0px;
+    padding: 0px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+
+    height: 100%;
+}
+
+img {
+
+    max-width: 100%;
+    display: block;
+}
+
+/*
+ * Cabeçalho
+ */
+
+header {
+
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #727272;
+}
+
+header a {
+
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+
+    display: flex;
+}
+
+ul li {
+
+    margin-left: 10px;
+    list-style: none;
+}
+
+/*
+ * Principal
+ */
+
+main {
+
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item {
+
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+#banner {
+    grid-column: 3;
+    grid-row: 2 / 5;
+}
+
+/*
+ * Rodapé
+ */
+
+footer {
+
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+    background-color: #727272;
+}
+
+/*
+ * Media Queries
+ */
+
+@media screen and (max-width:600px) {
+
+    main {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .item {
+
+        align-items: center;
+        display: block;
+    }
+
+    #banner {
+        /*grid-column: auto;
+        grid-row: auto;*/
+
+        display: none;
+    }
+}
